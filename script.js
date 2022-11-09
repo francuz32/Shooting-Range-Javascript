@@ -3,6 +3,7 @@ var empezar = document.querySelector("button");
 var reempezar = document.querySelector(".restart");
 var pincel = pantalla.getContext("2d");
 
+
 pincel.fillStyle = "lightgrey";
 pincel.fillRect(0, 0, 1000, 800);
 
@@ -82,7 +83,13 @@ function counterZero(){
 function sound(){
     gun.play();
 }
+
+
+
+
 pantalla.onclick = disparar;
-empezar.onclick = actualizarPantalla;
+reempezar.onclick = actualizarPantalla;
+reempezar.onclick = counterZero;
+
 
 
